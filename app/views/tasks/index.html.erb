@@ -29,16 +29,12 @@
     <% end %>
     
 </ul>
-<% if logged_in? %>
+
 <%= link_to "新規投稿", new_task_path %>
 <div class="center jumbotron">
   <div class="text-center">
   <%= link_to 'Logout', logout_path, method: :delete, class: 'btn btn-lg btn-primary' %>
   </div>
-<% else %>
-  <div class="text-center">
-  <%= link_to 'Login!', login_path, class: 'btn btn-lg btn-primary' %>
-  </div>
 </div>
-<% end %>
+
 
